@@ -7,13 +7,10 @@ export default function Contact() {
                 <div className="lg:w-2/3 md:w-1/2 bg-gray-900 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
                     <div style={{ maxWidth: "100%", listStyle: "none", transition: "none", overflow: "hidden", width: "500px", height: "500px" }}>
                         <div id="display-google-map" style={{ height: "100%", width: "100%", maxWidth: "100%" }}>
-                            <iframe
-                                style={{ height: "100%", width: "100%", border: "0" }}
-                                frameBorder="0"
-                                src="https://www.google.com/maps/embed/v1/place?q=2475+Waverley+Street,+Winnipeg,+MB,+Canada&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
-                                allowFullScreen
-                            ></iframe>
+                            <iframe style={{ height: "100%", width: "100%", border: "0" }} frameBorder="0" src="https://www.google.com/maps/embed/v1/place?q=2475+Waverley+Street,+Winnipeg,+MB,+Canada&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
                         </div>
+                        <a className="googlemaps-made" href="https://kbj9qpmy.com/bp" id="grab-map-authorization">Broadband Providers</a>
+                        <style>#display-google-map img{{ maxHeight: "none", maxWidth: "none!important", background: "none!important" }}</style>
                     </div>
                     <div className="bg-gray-900 relative flex flex-wrap py-6 rounded shadow-md">
                         <div className="lg:w-1/2 px-6">
@@ -22,14 +19,14 @@ export default function Contact() {
                             </h2>
                             <p className="mt-1">
                                 2475 Waverley St. <br />
-                                Winnipeg, MB R3Y 0X9, Canada
+                                Canada, MB R3Y 0X9
                             </p>
                         </div>
                         <div className="lg:w-1/2 px-6 mt-4 lg:mt-0">
                             <h2 className="title-font font-semibold text-white tracking-widest text-xs">
                                 EMAIL
                             </h2>
-                            <a className="text-indigo-400 leading-relaxed" href="mailto:georgebenmonday@email.com">
+                            <a className="text-indigo-400 leading-relaxed">
                                 georgebenmonday@email.com
                             </a>
                             <h2 className="title-font font-semibold text-white tracking-widest text-xs mt-4">
@@ -40,9 +37,12 @@ export default function Contact() {
                     </div>
                 </div>
                 <form
-                    netlify
-                    name="contact"
-                    className="lg:w-1/3 md:w-1/2 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
+                    onSubmit={(e) => {
+                        e.preventDefault();
+                        console.log("Form Submitted");
+                    }}
+                    className="lg:w-1/3 md:w-1/2 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0"
+                >
                     <h2 className="text-white sm:text-4xl text-3xl mb-1 font-medium title-font">
                         Hire Me
                     </h2>

@@ -36,19 +36,20 @@ export const projects = [
 export const testimonials = [
   {
     quote:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quod necessitatibus quidem impedit facilis? Distinctio laboriosam veritatis recusandae minus. Voluptatum accusantium hic laudantium soluta ea sapiente cupiditate officia maiores itaque.",
+      "Working with Zoozle has been a game-changer for our business. Their platform is intuitive and has significantly improved our team's productivity. The support team is always responsive and helpful. We couldn't be happier with our experience.",
     image: "https://randomuser.me/api/portraits/men/1.jpg",
     name: "Jesse Hicks",
     company: "Zoozle",
   },
   {
     quote:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quod necessitatibus quidem impedit facilis? Distinctio laboriosam veritatis recusandae minus. Voluptatum accusantium hic laudantium soluta ea sapiente cupiditate officia maiores itaque.",
+      "Dooble.io has revolutionized how we approach project management. The seamless integration with our existing tools and the ease of use have made it an essential part of our workflow. The impact on our efficiency and output has been tremendous.",
     image: "https://randomuser.me/api/portraits/men/94.jpg",
     name: "Ruben Alvarez",
     company: "Dooble.io",
   },
 ];
+
 
 export const technicalSkills = {
   languages: [

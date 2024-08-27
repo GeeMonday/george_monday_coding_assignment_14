@@ -10,7 +10,7 @@ export default function Contact() {
                             <iframe style={{ height: "100%", width: "100%", border: "0" }} frameBorder="0" src="https://www.google.com/maps/embed/v1/place?q=2475+Waverley+Street,+Winnipeg,+MB,+Canada&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
                         </div>
                         <a className="googlemaps-made" href="https://kbj9qpmy.com/bp" id="grab-map-authorization">Broadband Providers</a>
-                        <style>#display-google-map img{{ maxHeight: "none", maxWidth: "none!important", background: "none!important" }}</style>
+                        {/* Removed the <style> tag; you should handle styles via CSS */}
                     </div>
                     <div className="bg-gray-900 relative flex flex-wrap py-6 rounded shadow-md">
                         <div className="lg:w-1/2 px-6">
@@ -26,7 +26,7 @@ export default function Contact() {
                             <h2 className="title-font font-semibold text-white tracking-widest text-xs">
                                 EMAIL
                             </h2>
-                            <a className="text-indigo-400 leading-relaxed">
+                            <a className="text-indigo-400 leading-relaxed" href="mailto:georgebenmonday@email.com">
                                 georgebenmonday@email.com
                             </a>
                             <h2 className="title-font font-semibold text-white tracking-widest text-xs mt-4">

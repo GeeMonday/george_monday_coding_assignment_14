@@ -1,0 +1,12 @@
+/* Contact.css */
+
+#display-google-map img {
+    max-height: none;
+    max-width: none !important;
+    background: none !important;
+}
+
+.googlemaps-made {
+    display: block;
+    margin-top: 10px;
+}
